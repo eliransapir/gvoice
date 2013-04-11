@@ -1,0 +1,1085 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17176E3C1352984F00C11809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17176E3B1352984F00C11809 /* Foundation.framework */; };
+		17176E471352984F00C11809 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17176E461352984F00C11809 /* UIKit.framework */; };
+		17176E481352984F00C11809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17176E3B1352984F00C11809 /* Foundation.framework */; };
+		17176E4A1352984F00C11809 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17176E491352984F00C11809 /* CoreGraphics.framework */; };
+		17176E4D1352984F00C11809 /* libGVoice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17176E381352984F00C11809 /* libGVoice.a */; };
+		17176E531352984F00C11809 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17176E511352984F00C11809 /* InfoPlist.strings */; };
+		17176E561352984F00C11809 /* GVTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 17176E551352984F00C11809 /* GVTests.h */; };
+		17176E581352984F00C11809 /* GVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17176E571352984F00C11809 /* GVTests.m */; };
+		1777C35B135337C50063DA4E /* GVoice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C359135337C50063DA4E /* GVoice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1777C35C135337C50063DA4E /* GVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C35A135337C50063DA4E /* GVoice.m */; };
+		1777C35D135337C50063DA4E /* GVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C35A135337C50063DA4E /* GVoice.m */; };
+		1777C3641353662C0063DA4E /* ParsingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C3621353662B0063DA4E /* ParsingUtils.h */; };
+		1777C3651353662C0063DA4E /* ParsingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C3631353662B0063DA4E /* ParsingUtils.m */; };
+		1777C3661353662C0063DA4E /* ParsingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C3631353662B0063DA4E /* ParsingUtils.m */; };
+		1777C369135368F20063DA4E /* ParsingUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C368135368F20063DA4E /* ParsingUtilsTests.m */; };
+		1777C37E13536E350063DA4E /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C36B13536E350063DA4E /* JSON.h */; };
+		1777C37F13536E350063DA4E /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C36C13536E350063DA4E /* NSObject+JSON.h */; };
+		1777C38013536E350063DA4E /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C36D13536E350063DA4E /* NSObject+JSON.m */; };
+		1777C38113536E350063DA4E /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C36E13536E350063DA4E /* SBJsonParser.h */; };
+		1777C38213536E350063DA4E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C36F13536E350063DA4E /* SBJsonParser.m */; };
+		1777C38313536E350063DA4E /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37013536E350063DA4E /* SBJsonStreamParser.h */; };
+		1777C38413536E350063DA4E /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37113536E350063DA4E /* SBJsonStreamParser.m */; };
+		1777C38513536E350063DA4E /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37213536E350063DA4E /* SBJsonStreamParserAdapter.h */; };
+		1777C38613536E350063DA4E /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37313536E350063DA4E /* SBJsonStreamParserAdapter.m */; };
+		1777C38713536E350063DA4E /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37413536E350063DA4E /* SBJsonStreamParserState.h */; };
+		1777C38813536E350063DA4E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37513536E350063DA4E /* SBJsonStreamParserState.m */; };
+		1777C38913536E350063DA4E /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37613536E350063DA4E /* SBJsonStreamWriter.h */; };
+		1777C38A13536E350063DA4E /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37713536E350063DA4E /* SBJsonStreamWriter.m */; };
+		1777C38B13536E350063DA4E /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37813536E350063DA4E /* SBJsonStreamWriterState.h */; };
+		1777C38C13536E350063DA4E /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37913536E350063DA4E /* SBJsonStreamWriterState.m */; };
+		1777C38D13536E350063DA4E /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37A13536E350063DA4E /* SBJsonTokeniser.h */; };
+		1777C38E13536E350063DA4E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37B13536E350063DA4E /* SBJsonTokeniser.m */; };
+		1777C38F13536E350063DA4E /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37C13536E350063DA4E /* SBJsonWriter.h */; };
+		1777C39013536E350063DA4E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37D13536E350063DA4E /* SBJsonWriter.m */; };
+		1777C39313536FC30063DA4E /* GVoiceAllSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C39113536FC20063DA4E /* GVoiceAllSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1777C39413536FC30063DA4E /* GVoiceAllSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C39213536FC20063DA4E /* GVoiceAllSettings.m */; };
+		1777C3971353707D0063DA4E /* GVoiceSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C3951353707C0063DA4E /* GVoiceSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1777C3981353707D0063DA4E /* GVoiceSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C3961353707C0063DA4E /* GVoiceSettings.m */; };
+		1777C3991353707D0063DA4E /* GVoiceSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C3961353707C0063DA4E /* GVoiceSettings.m */; };
+		17844A1E1364E86700358524 /* GVoiceGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 17844A1C1364E86700358524 /* GVoiceGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17844A1F1364E86700358524 /* GVoiceGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 17844A1D1364E86700358524 /* GVoiceGroup.m */; };
+		17BAF82E1353353E00E880A8 /* NSString-GVoice.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BAF82C1353353E00E880A8 /* NSString-GVoice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAF82F1353353E00E880A8 /* NSString-GVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BAF82D1353353E00E880A8 /* NSString-GVoice.m */; };
+		17BAF8301353353E00E880A8 /* NSString-GVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BAF82D1353353E00E880A8 /* NSString-GVoice.m */; };
+		17BAF83A1353362B00E880A8 /* GVCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BAF8381353362B00E880A8 /* GVCredentials.h */; };
+		7BC0BFBA17172C37002A90BD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC0BFB917172C37002A90BD /* Cocoa.framework */; };
+		7BC0BFC817172C38002A90BD /* GV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0BFC717172C38002A90BD /* GV.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFCC17172C63002A90BD /* GVoice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C359135337C50063DA4E /* GVoice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC0BFCD17172C68002A90BD /* GVoiceAllSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C39113536FC20063DA4E /* GVoiceAllSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC0BFCE17172C6A002A90BD /* GVoiceSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C3951353707C0063DA4E /* GVoiceSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC0BFCF17172C6E002A90BD /* GVoiceGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 17844A1C1364E86700358524 /* GVoiceGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC0BFD017172C79002A90BD /* NSString-GVoice.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BAF82C1353353E00E880A8 /* NSString-GVoice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC0BFD117172C9B002A90BD /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C36B13536E350063DA4E /* JSON.h */; };
+		7BC0BFD217172C9B002A90BD /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C36C13536E350063DA4E /* NSObject+JSON.h */; };
+		7BC0BFD317172C9B002A90BD /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C36E13536E350063DA4E /* SBJsonParser.h */; };
+		7BC0BFD417172C9B002A90BD /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37013536E350063DA4E /* SBJsonStreamParser.h */; };
+		7BC0BFD517172C9B002A90BD /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37213536E350063DA4E /* SBJsonStreamParserAdapter.h */; };
+		7BC0BFD617172C9B002A90BD /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37413536E350063DA4E /* SBJsonStreamParserState.h */; };
+		7BC0BFD717172C9B002A90BD /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37613536E350063DA4E /* SBJsonStreamWriter.h */; };
+		7BC0BFD817172C9B002A90BD /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37813536E350063DA4E /* SBJsonStreamWriterState.h */; };
+		7BC0BFD917172C9B002A90BD /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37A13536E350063DA4E /* SBJsonTokeniser.h */; };
+		7BC0BFDA17172C9B002A90BD /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C37C13536E350063DA4E /* SBJsonWriter.h */; };
+		7BC0BFDB17172CAB002A90BD /* ParsingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1777C3621353662B0063DA4E /* ParsingUtils.h */; };
+		7BC0BFDC17172CF7002A90BD /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C36D13536E350063DA4E /* NSObject+JSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFDD17172CF7002A90BD /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C36F13536E350063DA4E /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFDE17172CF7002A90BD /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37113536E350063DA4E /* SBJsonStreamParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFDF17172CF7002A90BD /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37313536E350063DA4E /* SBJsonStreamParserAdapter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE017172CF7002A90BD /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37513536E350063DA4E /* SBJsonStreamParserState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE117172CF7002A90BD /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37713536E350063DA4E /* SBJsonStreamWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE217172CF7002A90BD /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37913536E350063DA4E /* SBJsonStreamWriterState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE317172CF7002A90BD /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37B13536E350063DA4E /* SBJsonTokeniser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE417172CF7002A90BD /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C37D13536E350063DA4E /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE517172CF7002A90BD /* GVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C35A135337C50063DA4E /* GVoice.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE617172CF7002A90BD /* NSString-GVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BAF82D1353353E00E880A8 /* NSString-GVoice.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE717172CF7002A90BD /* ParsingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C3631353662B0063DA4E /* ParsingUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE817172CF7002A90BD /* GVoiceAllSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C39213536FC20063DA4E /* GVoiceAllSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFE917172CF7002A90BD /* GVoiceSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1777C3961353707C0063DA4E /* GVoiceSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFEA17172CF7002A90BD /* GVoiceGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 17844A1D1364E86700358524 /* GVoiceGroup.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BC0BFF017172DE3002A90BD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC0BFB917172C37002A90BD /* Cocoa.framework */; };
+		7BC0BFF617172DE3002A90BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0BFF417172DE3002A90BD /* InfoPlist.strings */; };
+		7BC0BFF817172DE3002A90BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0BFF717172DE3002A90BD /* main.m */; };
+		7BC0BFFC17172DE3002A90BD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0BFFA17172DE3002A90BD /* Credits.rtf */; };
+		7BC0BFFF17172DE3002A90BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0BFFE17172DE3002A90BD /* AppDelegate.m */; };
+		7BC0C00217172DE3002A90BD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0C00017172DE3002A90BD /* MainMenu.xib */; };
+		7BC0C00817172E5D002A90BD /* GV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC0BFB817172C37002A90BD /* GV.framework */; };
+		7BC0C00B17172E6A002A90BD /* GV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BC0BFB817172C37002A90BD /* GV.framework */; };
+		7BC0C00D171730D4002A90BD /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC0C00C171730D4002A90BD /* AtoZ.framework */; };
+		7BC0C01C171749FF002A90BD /* GV.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC0BFC617172C38002A90BD /* GV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC0C01F1717524D002A90BD /* GVMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC0C01D1717524D002A90BD /* GVMessage.h */; };
+		7BC0C0201717524D002A90BD /* GVMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0C01E1717524D002A90BD /* GVMessage.m */; };
+		7BC0C02317175597002A90BD /* GVFolderController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC0C02117175596002A90BD /* GVFolderController.h */; };
+		7BC0C02417175597002A90BD /* GVFolderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0C02217175596002A90BD /* GVFolderController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17176E4B1352984F00C11809 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17176E2F1352984F00C11809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17176E371352984F00C11809;
+			remoteInfo = GV;
+		};
+		7BC0C00917172E62002A90BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17176E2F1352984F00C11809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC0BFB717172C37002A90BD;
+			remoteInfo = GV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BC0C00717172E51002A90BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BC0C00B17172E6A002A90BD /* GV.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17176E381352984F00C11809 /* libGVoice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGVoice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		17176E3B1352984F00C11809 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17176E3F1352984F00C11809 /* GVoice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GVoice-Prefix.pch"; sourceTree = "<group>"; };
+		17176E451352984F00C11809 /* GVoiceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GVoiceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17176E461352984F00C11809 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17176E491352984F00C11809 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17176E501352984F00C11809 /* GVoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GVoiceTests-Info.plist"; sourceTree = "<group>"; };
+		17176E521352984F00C11809 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17176E541352984F00C11809 /* GVoiceTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GVoiceTests-Prefix.pch"; sourceTree = "<group>"; };
+		17176E551352984F00C11809 /* GVTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVTests.h; sourceTree = "<group>"; };
+		17176E571352984F00C11809 /* GVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVTests.m; sourceTree = "<group>"; };
+		1777C359135337C50063DA4E /* GVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVoice.h; sourceTree = "<group>"; };
+		1777C35A135337C50063DA4E /* GVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVoice.m; sourceTree = "<group>"; };
+		1777C3621353662B0063DA4E /* ParsingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingUtils.h; sourceTree = "<group>"; };
+		1777C3631353662B0063DA4E /* ParsingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingUtils.m; sourceTree = "<group>"; };
+		1777C367135368F20063DA4E /* ParsingUtilsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingUtilsTests.h; sourceTree = "<group>"; };
+		1777C368135368F20063DA4E /* ParsingUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingUtilsTests.m; sourceTree = "<group>"; };
+		1777C36B13536E350063DA4E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		1777C36C13536E350063DA4E /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		1777C36D13536E350063DA4E /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		1777C36E13536E350063DA4E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		1777C36F13536E350063DA4E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		1777C37013536E350063DA4E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		1777C37113536E350063DA4E /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		1777C37213536E350063DA4E /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		1777C37313536E350063DA4E /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		1777C37413536E350063DA4E /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		1777C37513536E350063DA4E /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		1777C37613536E350063DA4E /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		1777C37713536E350063DA4E /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		1777C37813536E350063DA4E /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		1777C37913536E350063DA4E /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		1777C37A13536E350063DA4E /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		1777C37B13536E350063DA4E /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		1777C37C13536E350063DA4E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		1777C37D13536E350063DA4E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		1777C39113536FC20063DA4E /* GVoiceAllSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVoiceAllSettings.h; sourceTree = "<group>"; };
+		1777C39213536FC20063DA4E /* GVoiceAllSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVoiceAllSettings.m; sourceTree = "<group>"; };
+		1777C3951353707C0063DA4E /* GVoiceSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVoiceSettings.h; sourceTree = "<group>"; };
+		1777C3961353707C0063DA4E /* GVoiceSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVoiceSettings.m; sourceTree = "<group>"; };
+		17844A1C1364E86700358524 /* GVoiceGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVoiceGroup.h; sourceTree = "<group>"; };
+		17844A1D1364E86700358524 /* GVoiceGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVoiceGroup.m; sourceTree = "<group>"; };
+		17BAF82C1353353E00E880A8 /* NSString-GVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-GVoice.h"; sourceTree = "<group>"; };
+		17BAF82D1353353E00E880A8 /* NSString-GVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-GVoice.m"; sourceTree = "<group>"; };
+		17BAF8381353362B00E880A8 /* GVCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVCredentials.h; sourceTree = "<group>"; };
+		7BC0BFB817172C37002A90BD /* GV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC0BFB917172C37002A90BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7BC0BFBC17172C38002A90BD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7BC0BFBD17172C38002A90BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7BC0BFBE17172C38002A90BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BC0BFC317172C38002A90BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BC0BFC517172C38002A90BD /* GV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GV-Prefix.pch"; path = "../GV-Prefix.pch"; sourceTree = "<group>"; };
+		7BC0BFC617172C38002A90BD /* GV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GV.h; path = GV.framework/GV.h; sourceTree = SOURCE_ROOT; };
+		7BC0BFC717172C38002A90BD /* GV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GV.m; path = GV.framework/GV.m; sourceTree = SOURCE_ROOT; };
+		7BC0BFEF17172DE3002A90BD /* GV4Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GV4Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC0BFF317172DE3002A90BD /* GV4Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GV4Mac-Info.plist"; sourceTree = "<group>"; };
+		7BC0BFF517172DE3002A90BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BC0BFF717172DE3002A90BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BC0BFF917172DE3002A90BD /* GV4Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GV4Mac-Prefix.pch"; sourceTree = "<group>"; };
+		7BC0BFFB17172DE3002A90BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7BC0BFFD17172DE3002A90BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BC0BFFE17172DE3002A90BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BC0C00117172DE3002A90BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7BC0C00C171730D4002A90BD /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
+		7BC0C01817174843002A90BD /* GV-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GV-Info.plist"; path = "GV.framework/GV-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7BC0C01A1717494C002A90BD /* GVCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVCredentials.h; path = GV4Mac/GVCredentials.h; sourceTree = SOURCE_ROOT; };
+		7BC0C01D1717524D002A90BD /* GVMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVMessage.h; path = GV.framework/GVMessage.h; sourceTree = "<group>"; };
+		7BC0C01E1717524D002A90BD /* GVMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVMessage.m; path = GV.framework/GVMessage.m; sourceTree = "<group>"; };
+		7BC0C02117175596002A90BD /* GVFolderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GVFolderController.h; path = GV.framework/GVFolderController.h; sourceTree = "<group>"; };
+		7BC0C02217175596002A90BD /* GVFolderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GVFolderController.m; path = GV.framework/GVFolderController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17176E351352984F00C11809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17176E3C1352984F00C11809 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17176E411352984F00C11809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17176E471352984F00C11809 /* UIKit.framework in Frameworks */,
+				17176E481352984F00C11809 /* Foundation.framework in Frameworks */,
+				17176E4A1352984F00C11809 /* CoreGraphics.framework in Frameworks */,
+				17176E4D1352984F00C11809 /* libGVoice.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFB417172C37002A90BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0BFBA17172C37002A90BD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFEC17172DE3002A90BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0C00D171730D4002A90BD /* AtoZ.framework in Frameworks */,
+				7BC0C00817172E5D002A90BD /* GV.framework in Frameworks */,
+				7BC0BFF017172DE3002A90BD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17176E2D1352984F00C11809 = {
+			isa = PBXGroup;
+			children = (
+				7BC0C02117175596002A90BD /* GVFolderController.h */,
+				7BC0C02217175596002A90BD /* GVFolderController.m */,
+				7BC0C01D1717524D002A90BD /* GVMessage.h */,
+				7BC0C01E1717524D002A90BD /* GVMessage.m */,
+				7BC0C00C171730D4002A90BD /* AtoZ.framework */,
+				17176E3D1352984F00C11809 /* GVoice */,
+				17176E4E1352984F00C11809 /* GVoiceTests */,
+				7BC0BFBF17172C38002A90BD /* GV.framework */,
+				7BC0BFF117172DE3002A90BD /* GV4Mac */,
+				17176E3A1352984F00C11809 /* Frameworks */,
+				17176E391352984F00C11809 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17176E391352984F00C11809 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17176E381352984F00C11809 /* libGVoice.a */,
+				17176E451352984F00C11809 /* GVoiceTests.octest */,
+				7BC0BFB817172C37002A90BD /* GV.framework */,
+				7BC0BFEF17172DE3002A90BD /* GV4Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17176E3A1352984F00C11809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17176E3B1352984F00C11809 /* Foundation.framework */,
+				17176E461352984F00C11809 /* UIKit.framework */,
+				17176E491352984F00C11809 /* CoreGraphics.framework */,
+				7BC0BFB917172C37002A90BD /* Cocoa.framework */,
+				7BC0BFBB17172C38002A90BD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17176E3D1352984F00C11809 /* GVoice */ = {
+			isa = PBXGroup;
+			children = (
+				1777C36A13536E1E0063DA4E /* JSON */,
+				17176E3E1352984F00C11809 /* Supporting Files */,
+				1777C359135337C50063DA4E /* GVoice.h */,
+				1777C35A135337C50063DA4E /* GVoice.m */,
+				17BAF82C1353353E00E880A8 /* NSString-GVoice.h */,
+				17BAF82D1353353E00E880A8 /* NSString-GVoice.m */,
+				1777C3621353662B0063DA4E /* ParsingUtils.h */,
+				1777C3631353662B0063DA4E /* ParsingUtils.m */,
+				1777C39113536FC20063DA4E /* GVoiceAllSettings.h */,
+				1777C39213536FC20063DA4E /* GVoiceAllSettings.m */,
+				1777C3951353707C0063DA4E /* GVoiceSettings.h */,
+				1777C3961353707C0063DA4E /* GVoiceSettings.m */,
+				17844A1C1364E86700358524 /* GVoiceGroup.h */,
+				17844A1D1364E86700358524 /* GVoiceGroup.m */,
+			);
+			name = GVoice;
+			path = GVCommon;
+			sourceTree = "<group>";
+		};
+		17176E3E1352984F00C11809 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17176E3F1352984F00C11809 /* GVoice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17176E4E1352984F00C11809 /* GVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				17176E4F1352984F00C11809 /* Supporting Files */,
+				17176E551352984F00C11809 /* GVTests.h */,
+				17176E571352984F00C11809 /* GVTests.m */,
+				17BAF8381353362B00E880A8 /* GVCredentials.h */,
+				1777C367135368F20063DA4E /* ParsingUtilsTests.h */,
+				1777C368135368F20063DA4E /* ParsingUtilsTests.m */,
+			);
+			name = GVoiceTests;
+			path = GVTests;
+			sourceTree = "<group>";
+		};
+		17176E4F1352984F00C11809 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17176E501352984F00C11809 /* GVoiceTests-Info.plist */,
+				17176E511352984F00C11809 /* InfoPlist.strings */,
+				17176E541352984F00C11809 /* GVoiceTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1777C36A13536E1E0063DA4E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1777C36B13536E350063DA4E /* JSON.h */,
+				1777C36C13536E350063DA4E /* NSObject+JSON.h */,
+				1777C36D13536E350063DA4E /* NSObject+JSON.m */,
+				1777C36E13536E350063DA4E /* SBJsonParser.h */,
+				1777C36F13536E350063DA4E /* SBJsonParser.m */,
+				1777C37013536E350063DA4E /* SBJsonStreamParser.h */,
+				1777C37113536E350063DA4E /* SBJsonStreamParser.m */,
+				1777C37213536E350063DA4E /* SBJsonStreamParserAdapter.h */,
+				1777C37313536E350063DA4E /* SBJsonStreamParserAdapter.m */,
+				1777C37413536E350063DA4E /* SBJsonStreamParserState.h */,
+				1777C37513536E350063DA4E /* SBJsonStreamParserState.m */,
+				1777C37613536E350063DA4E /* SBJsonStreamWriter.h */,
+				1777C37713536E350063DA4E /* SBJsonStreamWriter.m */,
+				1777C37813536E350063DA4E /* SBJsonStreamWriterState.h */,
+				1777C37913536E350063DA4E /* SBJsonStreamWriterState.m */,
+				1777C37A13536E350063DA4E /* SBJsonTokeniser.h */,
+				1777C37B13536E350063DA4E /* SBJsonTokeniser.m */,
+				1777C37C13536E350063DA4E /* SBJsonWriter.h */,
+				1777C37D13536E350063DA4E /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		7BC0BFBB17172C38002A90BD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0BFBC17172C38002A90BD /* AppKit.framework */,
+				7BC0BFBD17172C38002A90BD /* CoreData.framework */,
+				7BC0BFBE17172C38002A90BD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7BC0BFBF17172C38002A90BD /* GV.framework */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0BFC617172C38002A90BD /* GV.h */,
+				7BC0BFC717172C38002A90BD /* GV.m */,
+				7BC0BFC017172C38002A90BD /* Supporting Files */,
+			);
+			name = GV.framework;
+			path = GV;
+			sourceTree = "<group>";
+		};
+		7BC0BFC017172C38002A90BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0C01817174843002A90BD /* GV-Info.plist */,
+				7BC0BFC217172C38002A90BD /* InfoPlist.strings */,
+				7BC0BFC517172C38002A90BD /* GV-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = GV.framework/en.lproj;
+			sourceTree = "<group>";
+		};
+		7BC0BFF117172DE3002A90BD /* GV4Mac */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0C01A1717494C002A90BD /* GVCredentials.h */,
+				7BC0BFFD17172DE3002A90BD /* AppDelegate.h */,
+				7BC0BFFE17172DE3002A90BD /* AppDelegate.m */,
+				7BC0C00017172DE3002A90BD /* MainMenu.xib */,
+				7BC0BFF217172DE3002A90BD /* Supporting Files */,
+			);
+			path = GV4Mac;
+			sourceTree = "<group>";
+		};
+		7BC0BFF217172DE3002A90BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0BFF317172DE3002A90BD /* GV4Mac-Info.plist */,
+				7BC0BFF417172DE3002A90BD /* InfoPlist.strings */,
+				7BC0BFF717172DE3002A90BD /* main.m */,
+				7BC0BFF917172DE3002A90BD /* GV4Mac-Prefix.pch */,
+				7BC0BFFA17172DE3002A90BD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17176E361352984F00C11809 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1777C35B135337C50063DA4E /* GVoice.h in Headers */,
+				17BAF82E1353353E00E880A8 /* NSString-GVoice.h in Headers */,
+				1777C39313536FC30063DA4E /* GVoiceAllSettings.h in Headers */,
+				1777C3971353707D0063DA4E /* GVoiceSettings.h in Headers */,
+				17844A1E1364E86700358524 /* GVoiceGroup.h in Headers */,
+				17BAF83A1353362B00E880A8 /* GVCredentials.h in Headers */,
+				1777C3641353662C0063DA4E /* ParsingUtils.h in Headers */,
+				1777C37E13536E350063DA4E /* JSON.h in Headers */,
+				1777C37F13536E350063DA4E /* NSObject+JSON.h in Headers */,
+				1777C38113536E350063DA4E /* SBJsonParser.h in Headers */,
+				1777C38313536E350063DA4E /* SBJsonStreamParser.h in Headers */,
+				1777C38513536E350063DA4E /* SBJsonStreamParserAdapter.h in Headers */,
+				1777C38713536E350063DA4E /* SBJsonStreamParserState.h in Headers */,
+				1777C38913536E350063DA4E /* SBJsonStreamWriter.h in Headers */,
+				1777C38B13536E350063DA4E /* SBJsonStreamWriterState.h in Headers */,
+				1777C38D13536E350063DA4E /* SBJsonTokeniser.h in Headers */,
+				1777C38F13536E350063DA4E /* SBJsonWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFB517172C37002A90BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0BFCC17172C63002A90BD /* GVoice.h in Headers */,
+				7BC0BFCD17172C68002A90BD /* GVoiceAllSettings.h in Headers */,
+				7BC0BFD017172C79002A90BD /* NSString-GVoice.h in Headers */,
+				7BC0BFCF17172C6E002A90BD /* GVoiceGroup.h in Headers */,
+				7BC0BFCE17172C6A002A90BD /* GVoiceSettings.h in Headers */,
+				7BC0BFD117172C9B002A90BD /* JSON.h in Headers */,
+				7BC0BFD217172C9B002A90BD /* NSObject+JSON.h in Headers */,
+				7BC0BFD317172C9B002A90BD /* SBJsonParser.h in Headers */,
+				7BC0BFD417172C9B002A90BD /* SBJsonStreamParser.h in Headers */,
+				7BC0BFDB17172CAB002A90BD /* ParsingUtils.h in Headers */,
+				7BC0BFD517172C9B002A90BD /* SBJsonStreamParserAdapter.h in Headers */,
+				7BC0BFD617172C9B002A90BD /* SBJsonStreamParserState.h in Headers */,
+				7BC0BFD717172C9B002A90BD /* SBJsonStreamWriter.h in Headers */,
+				7BC0BFD817172C9B002A90BD /* SBJsonStreamWriterState.h in Headers */,
+				7BC0BFD917172C9B002A90BD /* SBJsonTokeniser.h in Headers */,
+				7BC0BFDA17172C9B002A90BD /* SBJsonWriter.h in Headers */,
+				7BC0C01C171749FF002A90BD /* GV.h in Headers */,
+				7BC0C01F1717524D002A90BD /* GVMessage.h in Headers */,
+				7BC0C02317175597002A90BD /* GVFolderController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17176E371352984F00C11809 /* GVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17176E5B1352984F00C11809 /* Build configuration list for PBXNativeTarget "GVoice" */;
+			buildPhases = (
+				17176E341352984F00C11809 /* Sources */,
+				17176E351352984F00C11809 /* Frameworks */,
+				17176E361352984F00C11809 /* Headers */,
+				17284124136B772F009AA069 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GVoice;
+			productName = GV;
+			productReference = 17176E381352984F00C11809 /* libGVoice.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		17176E441352984F00C11809 /* GVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17176E5E1352984F00C11809 /* Build configuration list for PBXNativeTarget "GVoiceTests" */;
+			buildPhases = (
+				17176E401352984F00C11809 /* Sources */,
+				17176E411352984F00C11809 /* Frameworks */,
+				17176E421352984F00C11809 /* Resources */,
+				17176E431352984F00C11809 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17176E4C1352984F00C11809 /* PBXTargetDependency */,
+			);
+			name = GVoiceTests;
+			productName = GVTests;
+			productReference = 17176E451352984F00C11809 /* GVoiceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7BC0BFB717172C37002A90BD /* GV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC0BFCB17172C38002A90BD /* Build configuration list for PBXNativeTarget "GV" */;
+			buildPhases = (
+				7BC0BFB317172C37002A90BD /* Sources */,
+				7BC0BFB417172C37002A90BD /* Frameworks */,
+				7BC0BFB517172C37002A90BD /* Headers */,
+				7BC0BFB617172C37002A90BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GV;
+			productName = GV;
+			productReference = 7BC0BFB817172C37002A90BD /* GV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BC0BFEE17172DE3002A90BD /* GV4Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC0C00317172DE3002A90BD /* Build configuration list for PBXNativeTarget "GV4Mac" */;
+			buildPhases = (
+				7BC0C00717172E51002A90BD /* CopyFiles */,
+				7BC0BFEB17172DE3002A90BD /* Sources */,
+				7BC0BFEC17172DE3002A90BD /* Frameworks */,
+				7BC0BFED17172DE3002A90BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC0C00A17172E62002A90BD /* PBXTargetDependency */,
+			);
+			name = GV4Mac;
+			productName = GV4Mac;
+			productReference = 7BC0BFEF17172DE3002A90BD /* GV4Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17176E2F1352984F00C11809 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = joeygibson.com;
+			};
+			buildConfigurationList = 17176E321352984F00C11809 /* Build configuration list for PBXProject "GVoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17176E2D1352984F00C11809;
+			productRefGroup = 17176E391352984F00C11809 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17176E371352984F00C11809 /* GVoice */,
+				17176E441352984F00C11809 /* GVoiceTests */,
+				7BC0BFB717172C37002A90BD /* GV */,
+				7BC0BFEE17172DE3002A90BD /* GV4Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17176E421352984F00C11809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17176E531352984F00C11809 /* InfoPlist.strings in Resources */,
+				17176E561352984F00C11809 /* GVTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFB617172C37002A90BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFED17172DE3002A90BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0BFF617172DE3002A90BD /* InfoPlist.strings in Resources */,
+				7BC0BFFC17172DE3002A90BD /* Credits.rtf in Resources */,
+				7BC0C00217172DE3002A90BD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17176E431352984F00C11809 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		17284124136B772F009AA069 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Version 2.0 (updated for Xcode 4, with some fixes)\n# Changes:\n#    - Works with xcode 4, even when running xcode 3 projects (Workarounds for apple bugs)\n#    - Faster / better: only runs lipo once, instead of once per recursion\n#    - Added some debugging statemetns that can be switched on/off by changing the DEBUG_THIS_SCRIPT variable to \"true\"\n#    - Fixed some typos\n# \n# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did this!\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n# * needs to be outside the double quotes?\ncp \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include/\"* \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\nfi\nfi  ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17176E341352984F00C11809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAF82F1353353E00E880A8 /* NSString-GVoice.m in Sources */,
+				1777C35C135337C50063DA4E /* GVoice.m in Sources */,
+				1777C3651353662C0063DA4E /* ParsingUtils.m in Sources */,
+				1777C38013536E350063DA4E /* NSObject+JSON.m in Sources */,
+				1777C38213536E350063DA4E /* SBJsonParser.m in Sources */,
+				1777C38413536E350063DA4E /* SBJsonStreamParser.m in Sources */,
+				1777C38613536E350063DA4E /* SBJsonStreamParserAdapter.m in Sources */,
+				1777C38813536E350063DA4E /* SBJsonStreamParserState.m in Sources */,
+				1777C38A13536E350063DA4E /* SBJsonStreamWriter.m in Sources */,
+				1777C38C13536E350063DA4E /* SBJsonStreamWriterState.m in Sources */,
+				1777C38E13536E350063DA4E /* SBJsonTokeniser.m in Sources */,
+				1777C39013536E350063DA4E /* SBJsonWriter.m in Sources */,
+				1777C39413536FC30063DA4E /* GVoiceAllSettings.m in Sources */,
+				1777C3981353707D0063DA4E /* GVoiceSettings.m in Sources */,
+				17844A1F1364E86700358524 /* GVoiceGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17176E401352984F00C11809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17176E581352984F00C11809 /* GVTests.m in Sources */,
+				17BAF8301353353E00E880A8 /* NSString-GVoice.m in Sources */,
+				1777C35D135337C50063DA4E /* GVoice.m in Sources */,
+				1777C3661353662C0063DA4E /* ParsingUtils.m in Sources */,
+				1777C369135368F20063DA4E /* ParsingUtilsTests.m in Sources */,
+				1777C3991353707D0063DA4E /* GVoiceSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFB317172C37002A90BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0BFDC17172CF7002A90BD /* NSObject+JSON.m in Sources */,
+				7BC0BFDD17172CF7002A90BD /* SBJsonParser.m in Sources */,
+				7BC0BFDE17172CF7002A90BD /* SBJsonStreamParser.m in Sources */,
+				7BC0BFDF17172CF7002A90BD /* SBJsonStreamParserAdapter.m in Sources */,
+				7BC0BFE017172CF7002A90BD /* SBJsonStreamParserState.m in Sources */,
+				7BC0BFE117172CF7002A90BD /* SBJsonStreamWriter.m in Sources */,
+				7BC0BFE217172CF7002A90BD /* SBJsonStreamWriterState.m in Sources */,
+				7BC0BFE317172CF7002A90BD /* SBJsonTokeniser.m in Sources */,
+				7BC0BFE417172CF7002A90BD /* SBJsonWriter.m in Sources */,
+				7BC0BFE517172CF7002A90BD /* GVoice.m in Sources */,
+				7BC0BFE617172CF7002A90BD /* NSString-GVoice.m in Sources */,
+				7BC0BFE717172CF7002A90BD /* ParsingUtils.m in Sources */,
+				7BC0BFE817172CF7002A90BD /* GVoiceAllSettings.m in Sources */,
+				7BC0BFE917172CF7002A90BD /* GVoiceSettings.m in Sources */,
+				7BC0BFEA17172CF7002A90BD /* GVoiceGroup.m in Sources */,
+				7BC0BFC817172C38002A90BD /* GV.m in Sources */,
+				7BC0C0201717524D002A90BD /* GVMessage.m in Sources */,
+				7BC0C02417175597002A90BD /* GVFolderController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC0BFEB17172DE3002A90BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0BFF817172DE3002A90BD /* main.m in Sources */,
+				7BC0BFFF17172DE3002A90BD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17176E4C1352984F00C11809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17176E371352984F00C11809 /* GVoice */;
+			targetProxy = 17176E4B1352984F00C11809 /* PBXContainerItemProxy */;
+		};
+		7BC0C00A17172E62002A90BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC0BFB717172C37002A90BD /* GV */;
+			targetProxy = 7BC0C00917172E62002A90BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17176E511352984F00C11809 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17176E521352984F00C11809 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BC0BFC217172C38002A90BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC0BFC317172C38002A90BD /* en */,
+			);
+			name = InfoPlist.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7BC0BFF417172DE3002A90BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC0BFF517172DE3002A90BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BC0BFFA17172DE3002A90BD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC0BFFB17172DE3002A90BD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7BC0C00017172DE3002A90BD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC0C00117172DE3002A90BD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17176E591352984F00C11809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=*]" = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17176E5A1352984F00C11809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=*]" = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		17176E5C1352984F00C11809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/GV.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GV/GVoice-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		17176E5D1352984F00C11809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/GV.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GV/GVoice-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		17176E5F1352984F00C11809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GVTests/GVoiceTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "GVTests/GVoiceTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		17176E601352984F00C11809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GVTests/GVoiceTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "GVTests/GVoiceTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		7BC0BFC917172C38002A90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GV.framework/GV-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "GV.framework/GV-Info.plist";
+				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7BC0BFCA17172C38002A90BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GV.framework/GV-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "GV.framework/GV-Info.plist";
+				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		7BC0C00417172DE3002A90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GV4Mac/GV4Mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "GV4Mac/GV4Mac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BC0C00517172DE3002A90BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GV4Mac/GV4Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "GV4Mac/GV4Mac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17176E321352984F00C11809 /* Build configuration list for PBXProject "GVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17176E591352984F00C11809 /* Debug */,
+				17176E5A1352984F00C11809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17176E5B1352984F00C11809 /* Build configuration list for PBXNativeTarget "GVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17176E5C1352984F00C11809 /* Debug */,
+				17176E5D1352984F00C11809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17176E5E1352984F00C11809 /* Build configuration list for PBXNativeTarget "GVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17176E5F1352984F00C11809 /* Debug */,
+				17176E601352984F00C11809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC0BFCB17172C38002A90BD /* Build configuration list for PBXNativeTarget "GV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC0BFC917172C38002A90BD /* Debug */,
+				7BC0BFCA17172C38002A90BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC0C00317172DE3002A90BD /* Build configuration list for PBXNativeTarget "GV4Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC0C00417172DE3002A90BD /* Debug */,
+				7BC0C00517172DE3002A90BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17176E2F1352984F00C11809 /* Project object */;
+}

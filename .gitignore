@@ -1,0 +1,5 @@
+
+.DS_Store
+build
+*.xcuser*
+GV4Mac/GVCredentials.h
